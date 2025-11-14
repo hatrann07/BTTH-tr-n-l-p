@@ -7,7 +7,7 @@ CREATE TABLE Student (
     sex BIT DEFAULT 1 ,
     Phone varchar(11) not null unique, 
 	address varchar(150) not null,
-    Point INT not null default 100
+    Point INT not null default 100 (point >= 0)
 );
 
 INSERT INTO Student (Student_id, full_name, date_of_birth, sex, phone, address, point) VALUES
